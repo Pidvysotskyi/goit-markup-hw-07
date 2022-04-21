@@ -739,7 +739,7 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter {
+.filter-list__button {
   cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--third-bg-color);
@@ -756,9 +756,9 @@ img {
   transition-duration: var(--animation-time);
   transition-timing-function: var(--timing-function);
 }
-.filter:hover,
-.filter:focus,
-.filter:active {
+.filter-list__button:hover,
+.filter-list__button:focus,
+.filter-list__button:active {
   color: var(--third-text-color);
   background: var(--active-text-color);
 
@@ -773,15 +773,12 @@ img {
   margin-top: -30px;
   margin-left: -30px;
 }
-.project-item {
+.project-list__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
 }
-.project-item.last-item {
-  margin-bottom: 0;
-}
-.project-link {
+.project-card {
   display: block;
   text-decoration: none;
   box-shadow: none;
@@ -789,11 +786,11 @@ img {
   transition-duration: var(--animation-time);
   transition-timing-function: var(--timing-function);
 }
-.img-thumb {
+.project-card__img-box {
   position: relative;
   overflow: hidden;
 }
-.project-info {
+.project-card__details {
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -812,20 +809,20 @@ img {
   transform: translateY(100%);
   transition: transform var(--animation-time) var(--timing-function);
 }
-.project-link:hover .project-info {
+.project-card:hover .project-card__details {
   transform: translateY(0);
 }
-.project-link:hover,
-.project-link:focus {
+.project-card:hover,
+.project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-description {
+.project-card__description {
   border-left: 1px solid var(--primary-border-color);
   border-right: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
   padding: 20px 24px;
 }
-.project-name {
+.project-card__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -833,7 +830,7 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
-.project-type {
+.project-card__type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
