@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.section {
+  @extend %section;
+}
+.conteiner {
+  @extend %conteiner;
+}
